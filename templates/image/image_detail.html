@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ object.title }}{% endblock title %}
+
+{% block content %}
+    <div class="image-detail">
+          <h2>{{ image.title }}</h2>
+          <h2> Image size {{ image.image.width }}x{{ image.image.height }}</h2>
+          <img src="{{ image.image.url}}" alt="{{ image.title }}">
+    </div>
+{% endblock content %}
