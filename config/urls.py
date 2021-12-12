@@ -20,7 +20,9 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('image/', include('image.urls')),
+    path('m/', include('image.urls')),
+    path('api/', include('api.urls')),
+    path('api-auth/', include('rest_framework.urls')),
 ]
 
 if settings.DEBUG:
