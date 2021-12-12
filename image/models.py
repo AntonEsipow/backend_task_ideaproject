@@ -1,5 +1,8 @@
 from django.db import models
 from django.urls import reverse
+from django.core.files import File
+from urllib import request
+import os
 
 
 class Image(models.Model):
